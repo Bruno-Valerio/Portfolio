@@ -295,6 +295,17 @@ header{
     margin-left: 10px;
 }
 
+#section-work{
+    padding: 5rem 0 5rem 1.5rem;
+    position: relative;
+}
+
+#header{
+    font-size: 2rem;
+    color: #08FDD8;
+    margin-bottom: 30px;
+}
+
 /* media section for bigger screens*/
 
 @media screen and (min-width: 950px) {
@@ -336,4 +347,45 @@ header{
     font-size: 6.3rem;
     line-height: 85px;
     letter-spacing: -6px;
+    position: relative;
+}
+
+.text-zone h1::before{
+    content: '</h1>';
+    position: absolute;
+    bottom: -10px;
+    right: -70px;
+    font-size: 1.2rem;
+    font-family: 'La Belle Aurore', cursive;
+    color: #666565;
+    letter-spacing: 3px;
+}
+
+.text-zone h1::after{
+    content: '<h1>';
+    position: absolute;
+    top: -80px;
+    left: -10px;
+    font-size: 1.2rem;
+    font-family: 'La Belle Aurore', cursive;
+    color: #666565;
+    letter-spacing: 3px;
+}
+
+.text-zone img{
+    width: 50px;
+}
+
+.text-zone .gray-text{
+    font-size: 1rem;
+}
+
+.scroll-down{
+    right: -30px;
+    bottom: 3.3rem;
+}
+
+.scroll-down--left{
+    left: 110px;
+    right: auto;
 }
