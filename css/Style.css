@@ -70,12 +70,18 @@ header{
 /* aside section starts here*/
 .aside{
     width: 100%;
-    height: 0%;
+    height: 0;
     position: fixed;
     top: 0;
     left: 0;
     overflow: hidden; 
+    background-color: #191919;
     z-index: 1;
+}
+
+.show-nav{
+    height: 100%;
+    overflow: visible;
 }
 
 .aside-wrapper{
@@ -287,4 +293,47 @@ header{
 .scroll-down .fas{
     transform: rotate(270deg);
     margin-left: 10px;
+}
+
+/* media section for bigger screens*/
+
+@media screen and (min-width: 950px) {
+    header{
+        justify-content: flex-end;
+    }
+    .btns-container{
+        display: none;
+    }
+    .aside{
+        width: 10%;
+        height: 100%;
+    }
+    .aside-wrapper{
+        height: 80%;
+    }
+    .logo-section{
+        min-height: 25vh;
+    }
+    .logo img{
+        width: 50px;
+        height: auto;
+    }
+    .social-icons{
+        margin-bottom: 0;
+    }
+    .social-icons li{
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+
+/* home section*/
+#section-home{
+    padding-left: 13rem;
+}
+
+.text-zone h1{
+    font-size: 6.3rem;
+    line-height: 85px;
+    letter-spacing: -6px;
 }
